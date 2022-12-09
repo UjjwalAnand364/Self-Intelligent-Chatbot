@@ -1,16 +1,16 @@
 {"intents":[
     {"tag":"Greet",
-    "patterns":["hello","hi","good day","greetings"],
-    "responses":["Hi!\nWhat can I do for you","Hello!\nWhat can I do for you?","Nice to meet you! \nHow can I help you?", "Hi it's really good to hear from you \n How can I help","Hello! How can I help you today","I'm glad to hear from you \n How can I assist you today"]
+    "patterns":["hello","hi","good day","greetings","Is anyone there?", "Whats up","how are ya","heyy","whatsup","hi! how are you","salutations","hello there", "hi there","howdy","it's nice to meet you","how's it going" ],
+    "responses":["Hi!\nWhat can I do for you","Hello!\nWhat can I do for you?","Nice to meet you! \nHow can I help you?", "Hi it's really good to hear from you \n How can I help","Hello! How can I help you today","I'm glad to hear from you \n How can I assist you today","Good to see you again!","Welcome! What brings you here?",]
     },
     
     {"tag": "goodbye",
-     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","cya","see ya"],
-     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.","Goodbye! I'm here if you need me \n Have a great day!","Okay \n I'll be here if you need me! Have a great day and take care", "Goodbye \n I'm always here to listen and provide assistance if I can"],
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time","cya","see ya","farewell","see you","farewell see you later","peace out","catch you later","see you around","so long"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.","Goodbye! I'm here if you need me \n Have a great day!","Okay \n I'll be here if you need me! Have a great day and take care", "Goodbye \n I'm always here to listen and provide assistance if I can","Take care! I look forward to our next conversation.","Farewell! I hope to see you again soon.","Goodbye! I hope you have a wonderful day."],
     },
 
     {"tag": "thanks",
-     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me","much appreciated","thank you very much","thank you kindly","thank you so much","much obliged"],
      "responses": ["Happy to help!", "Any time!", "My pleasure", "you're welcome","You're welcome \n I'm glad I could help.","You're welcome! \n Is there anything else you need help with?","Welcome \n I'm glad I could help! Is there anything else you'd like to know? "],
     }
 ]}
