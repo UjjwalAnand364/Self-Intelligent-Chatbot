@@ -3,7 +3,6 @@ import json
 import pickle
 import numpy as np
 import nltk
-nltk.download('punkt')
 from nltk.stem import WordNetLemmatizer
 
 from tensorflow import keras
@@ -24,7 +23,7 @@ for intent in intents["intents"]:
     for pattern in intent["patterns"]:
         word_list=nltk.word_tokenize(pattern)
         words.extend(word_list)
-        documents.append((word_list),intent['tag'])
+        documents.append(((word_list),intent['tag']))
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
         
@@ -66,7 +65,6 @@ model.add(Dense(len(train_y[0]),activation='softmax'))
 sgd=SGD(lr=0.01,decay=1e-6,momentum=0.9,nesterov=True)
 model.compile(loss='categorical_crossentropy',optimizer=sgd,metrics=["Accuracy"])
 
-model.fit(np.array(train_x),np.array(train_y),epochs=200,batch_size=5,verbose=1)
-model.save('chatbot_model.model')
+hist=model.fit(np.array(train_x),np.array(train_y),epochs=200,batch_size=5,verbose=1)
+model.save('chatbot_model.h5',hist)
 print('Done')
- 
